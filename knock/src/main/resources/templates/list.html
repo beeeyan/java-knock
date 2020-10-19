@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+<h1>Springboot Hello Sample</h1>
+<table>
+    <tr th:each="mesuredata : ${mesuredatas}">
+        <td th:text="${mesuredata.id}"></td>
+        <td th:text="${mesuredata.name}"></td>
+        <td th:text="${mesuredata.power1}"></td>
+        <td th:text="${mesuredata.power2}"></td>
+        <td th:text="${mesuredata.power3}"></td>
+        <td th:text="${mesuredata.power4}"></td>
+        <td th:text="${mesuredata.power5}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
